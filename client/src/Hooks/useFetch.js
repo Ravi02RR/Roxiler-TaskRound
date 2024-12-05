@@ -9,7 +9,7 @@ export const useFetch = (path, options) => {
     function fetchData() {
         setLoading(true);
         axios
-            .get(`http://localhost:3000/api/v1${path}`, options)
+            .get(`https://roxiler-task-round.vercel.app/api/v1${path}`, options)
             .then((res) => {
                 setData(res.data);
                 console.log(res.data);
